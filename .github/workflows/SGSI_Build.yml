@@ -21,9 +21,9 @@ jobs:
         run: |
           function required () { if ! [[ "$1" ]]; then echo "$2 variable can't be null." && exit 1; fi }
           required "${{ steps.config.outputs.rom_url }}" "https://bigota.d.miui.com/20.7.16/miui_PICASSO_20.7.16_cad8bdd324_10.0.zip"
-          required "${{ steps.config.outputs.build_type }}" "miui"
+          required "${{ steps.config.outputs.build_type }}" "ab"
           required "${{ steps.config.outputs.os_type }}" "colorOS"
-          required "${{ steps.config.outputs.zip_name }}" "ab"
+          required "${{ steps.config.outputs.zip_name }}" "k30"
           required "${{ steps.config.outputs.version }}" "k30"
           required "${{ steps.config.outputs.repack_name }}" "k30a"
 
